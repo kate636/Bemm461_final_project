@@ -12,10 +12,6 @@ import plotly.graph_objs as go
 import numpy as np
 from IPython.display import display
 
-# got tired of warnings 🙃
-import warnings
-warnings.filterwarnings('ignore')
-
 
 jobs_all = pd.read_csv('gsearch_jobs.csv').replace("'","", regex=True)
 jobs_all.date_time = pd.to_datetime(jobs_all.date_time) # convert to date time
